@@ -13,20 +13,20 @@
 
 
 const average = (array) => {
-  let numerador = 0
-  const denominador = array.length
+  let numerador = 0;
+  const denominador = array.length;
 
-  for (i=0; i<array.length; i+=1) {
-    if(typeof array[i]!= "number") {
+  for (let i = 0; i < array.length; i += 1) {
+    if (typeof array[i] !== 'number') {
       return undefined;
-    } else if(array==[]){
+    } if (array === []) {
       return undefined;
     } else {
-      numerador=numerador+array[i];
+      numerador = numerador + array[i];
     }
   }
-  let resultado = Math.round(numerador/denominador)
-  return resultado
+  let resultado = Math.round(numerador / denominador);
+  return resultado;
 };
 
 module.exports = average;
