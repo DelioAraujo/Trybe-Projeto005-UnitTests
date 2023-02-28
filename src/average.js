@@ -11,7 +11,6 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-
 const average = (array) => {
   let numerador = 0;
   const denominador = array.length;
@@ -21,9 +20,8 @@ const average = (array) => {
       return undefined;
     } if (array === []) {
       return undefined;
-    } else {
-      numerador = numerador + array[i];
     }
+    numerador = numerador + array[i];
   }
   let resultado = Math.round(numerador / denominador);
   return resultado;
