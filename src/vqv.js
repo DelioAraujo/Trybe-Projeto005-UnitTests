@@ -23,7 +23,10 @@ const vqv = (a, b) => {
     return undefined;
   }
 
-  return `Oi, meu nome é ${a}!\nTenho ${b} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`;
+  return `Oi, meu nome é ${a}!
+Tenho ${b} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
 };
 
 module.exports = vqv;
