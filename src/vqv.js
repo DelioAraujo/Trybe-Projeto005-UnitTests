@@ -23,12 +23,7 @@ const vqv = (string, numero) => {
     return undefined;
   }
 
-  const mensagem = `Oi, meu nome é ${string}!\n`;
-  const idade = `Tenho ${numero} anos,\n`;
-  const trabalho = `trabalho na Trybe e mando muito em programação!\n`;
-  const hashtag = `#VQV!`;
-
-  return mensagem + idade + trabalho + hashtag;
+  return 'Oi, meu nome é ' + string + '!\nTenho ' + numero + ' anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!';
 };
 
 
