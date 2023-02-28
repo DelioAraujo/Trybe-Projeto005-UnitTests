@@ -21,7 +21,7 @@ const average = (array) => {
     } if (array === []) {
       return undefined;
     }
-    numerador = numerador + array[i];
+    numerador += array[i];
   }
   let resultado = Math.round(numerador / denominador);
   return resultado;
