@@ -19,12 +19,11 @@
 */
 
 const vqv = (a, b) => {
-  if (string === undefined && numero === undefined) {
+  if (a === undefined && b === undefined) {
     return undefined;
   }
 
-  return 
-  `Oi, meu nome é ${a}!\nTenho ${b} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`;
+  return `Oi, meu nome é ${a}!\nTenho ${b} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`;
 };
 
 module.exports = vqv;
