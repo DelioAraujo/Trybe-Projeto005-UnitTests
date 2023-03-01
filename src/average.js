@@ -12,15 +12,17 @@
 */
 
 const average = (array) => {
+  if (array.length === 0) {
+    return undefined;
+  }
+  
   let numerador = 0;
   const denominador = array.length;
 
   for (let i = 0; i < array.length; i += 1) {
     if (typeof array[i] !== 'number') {
       return undefined;
-    } if (array === []) {
-      return undefined;
-    }
+    } 
     numerador += array[i];
   }
   let resultado = Math.round(numerador / denominador);
